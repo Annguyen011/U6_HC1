@@ -41,7 +41,7 @@ public class BallHandler : MonoBehaviour
     private void MakeANewCircle()
     {
         GameObject[] array = GameObject.FindGameObjectsWithTag("circle");
-
+        // Has problem by old version 
         GameObject gameObject = Instantiate(Resources.Load("round" + UnityEngine.Random.Range(1, 4))) as GameObject;
         gameObject.transform.position = Vector3.forward * 23;
         gameObject.name = "Circle";
